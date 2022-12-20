@@ -88,3 +88,30 @@ nav h1:hover{
     transform: translateY(0);
 }
 
+.mobile-menu a{
+    display:block;
+    padding: 1rem;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.25rem;
+    transition: 0.3s;
+}
+
+.mobile-menu a:hover{
+    color: crimson;
+    background-color: #fff;
+}
+
+
+@media (min-width: 768px) {
+    .mobile-menu, 
+    .hamburger{
+        display: none;
+    }
+
+    .menu{
+        display: flex;
+    }
+    
+}
