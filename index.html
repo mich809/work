@@ -18,7 +18,7 @@
         <li><a href="#home">Home</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#about">About</a></li>
-        <li class="ctn"><a href="#">Contact</a></li>
+        <li class="ctn"><a href="#contact">Contact</a></li>
       </ul>
       <button class="hamburger">
         <span class="material-icons">close</span>
@@ -28,7 +28,6 @@
       <div class="header-content">
         <h2>Logo</h2>
         <h1>Sub-title</h1>
-        <a href="#" class="ctn">Learn more</a>
       </div>
     </header>
     <section class="services" id="services">
@@ -96,11 +95,64 @@
       </div>
     </section>
 
-    <footer>
-      <p>
-        123 Fort Lauderdale,FL 10123 | Phone: 555-555-555 | Email:
-        contact@Example.com
-      </p>
+    <footer id="contact">
+      <div class="content">
+        <h2>Contact Us</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+          exercitationem veniam velit error cumque atque nostrum earum
+          recusandae, ea ab quibusdam quia sit, mollitia tenetur.
+        </p>
+      </div>
+      <div class="container">
+        <div class="contactInfo">
+          <div class="box">
+            <div class="icon"></div>
+            <div class="text">
+              <h3>Address</h3>
+              <p>123 Camp Road <br />Fort Lauderdale,FL <br />10123</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="icon"></div>
+            <div class="text">
+              <h3>Phone</h3>
+              <p>555-555-5555</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="icon"></div>
+            <div class="text">
+              <h3>Email</h3>
+              <p>example@gmail.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="contactForm">
+          <form
+            action="https://formsubmit.co/michaelcaridad1@gmail.com"
+            method="post"
+          >
+            <input type="hidden" name="_subject" value="new email" />
+            <h2>Send Message</h2>
+            <div class="inputBox">
+              <span>Full Name</span>
+              <input type="text" name="full name" required />
+            </div>
+            <div class="inputBox">
+              <span>Email</span>
+              <input type="email" name="email" required />
+            </div>
+            <div class="inputBox">
+              <span>Type your Message...</span>
+              <textarea required name="message"></textarea>
+            </div>
+            <div class="inputBox">
+              <button type="submit">Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
     </footer>
     <script src="main.js"></script>
   </body>

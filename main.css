@@ -6,15 +6,19 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 body, html{
     overflow-x: hidden;
+    scroll-behavior: smooth;
+    
 }
 
 :root {
-    --primary-text: #fff;
-    --primary-color: #fc036b;
+    --primary-text: #ffb703;
+    --secondary-text: #fefae0;
+    --background-color: #023047;
   }
 
 /*===End of Global===*/
@@ -41,10 +45,12 @@ ul{
     width: 100%;
     top: 0;
     left: 0;
-    width: 100%;
     justify-content: space-between;
-    padding: 20px;
     color: var(--primary-text);
+}
+
+.navbar h1{
+    padding-left: 20px;
 }
 
 .nav-links{
@@ -61,7 +67,7 @@ ul{
 header{
     width: 100vw;
     height: 100vh;
-    background-image: url('./img/pexels-mali-maeder-68470.jpg');
+    background-image: url('./img/main.png');
     background-position: bottom;
     background-size: cover;
     display:flex;
@@ -71,12 +77,12 @@ header{
 
 .header-content{
     margin-bottom: 150px;
-    color: var(--primary-color);
+    color: var(--secondary-text);
     text-align: center;
 }
 
 .header-content h2{
-    font-size: 4vmin;
+    font-size: 20vmin;
 }
 
 .line{
@@ -90,20 +96,10 @@ header{
 .header-content h1{
     font-size: 7vmin;
     margin-top: 50px;
-    margin-bottom: 30px;
     text-transform: uppercase;
 }
 
-.ctn{
-    padding: 8px 15px;
-    background: var(--primary-color);
-    border-radius: 30px;
-    color: whitesmoke;
-} 
 
-.ctn:hover{
-    color: whitesmoke;
-}
 .hamburger{
     position: absolute;
     top: 30px;
@@ -123,15 +119,13 @@ header{
 }
 
 .hamburger span{
-    color: var(--primary-color);
-    font-size: 2rem;
-   
+    color : var(--primary-text);
+    font-size: 3rem;
 }
 
 /* About Us */
 .about{
     width: 100%;
-    height: 100vh;
     background-image: url("./img/pexels-photo-3822955.webp");
     background-position: center;
     background-size: cover;
@@ -212,21 +206,136 @@ p{
     padding: 0px 40px;
 }
 
-/* Footer */
+/* Contact */
 
 footer{
-    width: 100%;
-    min-height: 100px;
-    padding: 20px 80px;
-    margin:0;
-    background: #484872;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: var(--background-color);
+}
+
+footer .content{
+    max-width: 800px;
     text-align: center;
 }
 
-footer p{
-    color: whitesmoke;
-    margin: 20px auto;
+footer .content h2{
+    font-size: 36px;
+    font-weight: 500;
+    color: var(--primary-text);
+    
+}
 
+footer .content p{
+    font-weight: 300;
+    color: var(--secondary-text);
+    
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    
+   
+}
+
+.container .contactInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.container .contactInfo .box{
+    padding: 20px 0;
+    display: flex;
+    
+}
+
+.container .contactInfo .box .text{    
+    display: flex;
+    font-size: 16px;
+    flex-direction: column;
+    font-weight: 300;
+      
+}
+
+.container .contactInfo .box .text h3{    
+    font-weight: 500;
+    color: var(--primary-text);
+    
+}
+
+.container .contactInfo .box .text p{    
+    color: var(--secondary-text);
+    margin: 0;
+    padding: 0;
+
+}
+
+.contactForm{
+    width: 40%;
+    padding: 40px;
+    background-color: var(--secondary-text);
+}
+
+.contactForm h2{
+    font-size: 30px;
+    color: var(--background-color);
+    font-weight: 500;
+}
+
+.contactForm .inputBox{
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+
+.contactForm .inputBox span{
+     left: 0;
+     padding: 5px 0;
+     font-size: 16px;
+     margin: 10px 0;
+     pointer-events: none;
+     transition: 0.5s;
+     color: var(--background-color);
+}
+
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span{
+    color: #e91e63;
+    font-size: 20px;
+    transform: translateY(-30px);
+}
+
+.contactForm .inputBox button{
+    width: 100%;
+    background: #00bc4d;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
 }
 
 
@@ -257,14 +366,19 @@ footer p{
         width: 100%;
         height: 100vh;
         justify-content: center;
-        background: #484872;
+        background: black;        
         margin-top: -900px;
         transition: all 0.5s ease;       
 
     } 
 
+    .navbar a{
+        color: red;
+    }
+
     .nav-links li {
         margin: 30px auto;
+        
     }  
 
     .mobile-menu {
@@ -290,11 +404,54 @@ footer p{
     }
 
     /* About Us */
-    .about{
-        width: 100%; 
+
+    .about-content{
+        width: 50%;
+        padding: 50px;
+        color: black;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        border: 1px red solid;
     }
 
-    footer{
-        padding: 10px;
+    .about-content h1{
+       font-size: 2rem;
     }
+    
+   
+
+    /* Contact Us */
+    footer{
+        padding: 50px;
+    }    
+    .container{
+        flex-direction: column;           
+    }
+    .container .contactInfo{
+        margin-bottom: 40px;
+        display: flex;    
+        justify-content: center;
+        align-items: center;
+     }
+
+    .container .contactInfo h3{
+        width: 100%;
+        text-align: center;
+    }
+
+    .container .contactInfo p{
+        width: 100%;        
+        text-align: center;
+    }
+
+    .contactForm{
+        width: 100%;
+        height: 100%;
+        margin-bottom: 10px;
+    }
+
+    
+   
 }
