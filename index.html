@@ -12,13 +12,13 @@
     />
   </head>
   <body>
-    <nav class="navbar">
+    <nav class="navbar" id="navbar">
       <h1 class="logo">BRA<span>N</span>D</h1>
       <ul class="nav-links mobile-menu">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#about">About</a></li>
-        <li class="ctn"><a href="#contact">Contact</a></li>
+        <li><a href="#home" class="anchor">Home</a></li>
+        <li><a href="#services" class="anchor">Services</a></li>
+        <li><a href="#about" class="anchor">About</a></li>
+        <li class="ctn"><a href="#contact" class="anchor">Contact</a></li>
       </ul>
       <button class="hamburger">
         <span class="material-icons">close</span>
@@ -37,47 +37,56 @@
       </div>
       <div class="row">
         <div class="col">
-          <img
-            src="./img/1109_landscape_workers_7x10_300dpi_cr_crop_landscape-med_0.jpg"
-            alt=""
-          />
-          <h4>Sub-title</h4>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur,
-            ut! Id exercitationem reprehenderit, repellendus repellat quo
-            tenetur ullam sapiente cumque, quibusdam natus non hic ipsam nostrum
-            animi similique odio iusto.
-          </p>
+          <div class="card">
+            <img
+              src="./img/1109_landscape_workers_7x10_300dpi_cr_crop_landscape-med_0.jpg"
+              alt=""
+            />
+
+            <h4>Sub-title</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur,
+              ut! Id exercitationem reprehenderit, repellendus repellat quo
+              tenetur ullam sapiente cumque, quibusdam natus non hic ipsam
+              nostrum animi similique odio iusto.
+            </p>
+          </div>
         </div>
         <div class="col">
-          <img src="./img/Landscaping-Apprenticeship-23sept.jpg" alt="" />
-          <h4>Sub-title</h4>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur,
-            ut! Id exercitationem reprehenderit, repellendus repellat quo
-            tenetur ullam sapiente cumque, quibusdam natus non hic ipsam nostrum
-            animi similique odio iusto.
-          </p>
+          <div class="card">
+            <img src="./img/Landscaping-Apprenticeship-23sept.jpg" alt="" />
+            <h4>Sub-title</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur,
+              ut! Id exercitationem reprehenderit, repellendus repellat quo
+              tenetur ullam sapiente cumque, quibusdam natus non hic ipsam
+              nostrum animi similique odio iusto.
+            </p>
+          </div>
         </div>
         <div class="col">
-          <img src="./img/landscaping4.webp" alt="" />
-          <h4>Sub-title</h4>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur,
-            ut! Id exercitationem reprehenderit, repellendus repellat quo
-            tenetur ullam sapiente cumque, quibusdam natus non hic ipsam nostrum
-            animi similique odio iusto.
-          </p>
+          <div class="card">
+            <img src="./img/landscaping4.webp" alt="" />
+            <h4>Sub-title</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur,
+              ut! Id exercitationem reprehenderit, repellendus repellat quo
+              tenetur ullam sapiente cumque, quibusdam natus non hic ipsam
+              nostrum animi similique odio iusto.
+            </p>
+          </div>
         </div>
         <div class="col">
-          <img src="./img/06-Process-3.webp" alt="" />
-          <h4>Sub-title</h4>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur,
-            ut! Id exercitationem reprehenderit, repellendus repellat quo
-            tenetur ullam sapiente cumque, quibusdam natus non hic ipsam nostrum
-            animi similique odio iusto.
-          </p>
+          <div class="card">
+            <img src="./img/06-Process-3.webp" alt="" />
+            <h4>Sub-title</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur,
+              ut! Id exercitationem reprehenderit, repellendus repellat quo
+              tenetur ullam sapiente cumque, quibusdam natus non hic ipsam
+              nostrum animi similique odio iusto.
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -134,21 +143,32 @@
             method="post"
           >
             <input type="hidden" name="_subject" value="new email" />
-            <h2>Send Message</h2>
+            <h2>Got ideas? We've got the skills. Let's team up</h2>
             <div class="inputBox">
-              <span>Full Name</span>
-              <input type="text" name="full name" required />
+              <input
+                type="text"
+                name="full name"
+                required
+                placeholder="Your name"
+              />
             </div>
             <div class="inputBox">
-              <span>Email</span>
-              <input type="email" name="email" required />
+              <input
+                type="email"
+                name="email"
+                required
+                placeholder="Your email"
+              />
             </div>
             <div class="inputBox">
-              <span>Type your Message...</span>
-              <textarea required name="message"></textarea>
+              <textarea
+                required
+                name="message"
+                placeholder="Tell us a little about the project..."
+              ></textarea>
             </div>
             <div class="inputBox">
-              <button type="submit">Send</button>
+              <button type="submit">Let's get started!</button>
             </div>
           </form>
         </div>
