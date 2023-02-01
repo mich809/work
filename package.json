@@ -1,0 +1,24 @@
+{
+  "name": "work",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "build": "tailwindcss -i ./input.css -o ./css/output.css ",
+    "watch": "tailwindcss -i ./input.css -o ./css/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mich809/work.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mich809/work/issues"
+  },
+  "homepage": "https://github.com/mich809/work#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  }
+}
