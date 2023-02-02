@@ -1,12 +1,23 @@
-const hamburger = document.querySelector('.hamburger');
-const hamburger_icon = hamburger.querySelector('span');
-const mobile_menu = document.getElementById('mobile-menu')
 const anchor_tags = document.querySelectorAll('.anchor')
+const menuOpenBtn = document.querySelector('.menu-open-btn');
+const menuCloseBtn = document.querySelector('.menu-close-btn')
+const offCanvasMenu = document.querySelector('.offcanvas-menu');
+
+
+menuCloseBtn.addEventListener('click', function(){
+  offCanvasMenu.classList.remove('translate-x-0');
+  offCanvasMenu.classList.add('translate-x-full');
+})
+menuOpenBtn.addEventListener('click', function(){
+  offCanvasMenu.classList.remove('translate-x-full');
+  offCanvasMenu.classList.add('translate-x-0');
+})
+
 
 anchor_tags.forEach(anchor => {
-   anchor.addEventListener('click', function handleClick(event) {
-         hamburger_icon.innerText = hamburger_icon.innerText === 'menu' ? 'menu' : 'close';
-         mobile_menu.classList.toggle('mobile-menu');
+   anchor.addEventListener('click', function () {        
+        offCanvasMenu.classList.remove('translate-x-0');
+        offCanvasMenu.classList.add('translate-x-full');
   
      
     });
@@ -16,8 +27,5 @@ anchor_tags.forEach(anchor => {
 
 
 
-hamburger.addEventListener('click', ()=>{
-    hamburger_icon.innerText = hamburger_icon.innerText === 'menu' ? 'close' : 'menu';
-    mobile_menu.classList.toggle('mobile-menu');
-})
+
 
