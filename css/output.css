@@ -608,6 +608,14 @@ video {
   height: 100vh;
 }
 
+.h-full{
+  height: 100%;
+}
+
+.h-96{
+  height: 24rem;
+}
+
 .max-h-fit{
   max-height: -moz-fit-content;
   max-height: fit-content;
@@ -785,6 +793,11 @@ video {
 .px-10{
   padding-left: 2.5rem;
   padding-right: 2.5rem;
+}
+
+.py-10{
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .pt-0{
