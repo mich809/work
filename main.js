@@ -15,9 +15,11 @@ menuOpenBtn.addEventListener('click', function(){
 
 
 anchor_tags.forEach(anchor => {
-   anchor.addEventListener('click', function () {        
-        offCanvasMenu.classList.remove('translate-x-0');
-        offCanvasMenu.classList.add('translate-x-full');
+   anchor.addEventListener('click', function () {   
+    console.log("yeah")
+    offCanvasMenu.classList.remove('translate-x-0');
+    offCanvasMenu.classList.add('translate-x-full');     
+       
   
      
     });
