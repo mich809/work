@@ -5,6 +5,7 @@ const offCanvasMenu = document.querySelector('.offcanvas-menu');
 
 
 menuCloseBtn.addEventListener('click', function(){
+  console.log("yeah")
   offCanvasMenu.classList.remove('translate-x-0');
   offCanvasMenu.classList.add('translate-x-full');
 })
