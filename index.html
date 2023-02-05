@@ -6,31 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chris's work-site</title>
     <link rel="stylesheet" href="css/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
 
     <script defer src="main.js"></script>
   </head>
   <body class="bg-[#ffffff] font-gaya font-thin">
-    <header class="shadow-md bg-[#000000]">
+    <header class="shadow-md bg-[#000000] border-b-4 border-gray-600">
       <nav class="flex w-[92%]">
         <div class="ml-10">
           <img class="w-48 cursor-pointer" src="/img/logo4.png" alt="..." />
         </div>
         <div class="flex items-center ml-auto">
-          <ul
-            class="text-[#ffffff] flex md:flex-row md:items-center md:gap-[4vw] md:pt-10"
-          >
-            <li>
-              <a href="#">Home</a>
-            </li>
-            <li>
-              <a href="#">About Us</a>
-            </li>
-            <li>
-              <a href="#">Gallery</a>
-            </li>
-            <li>
-              <a href="#">Contact Us </a>
-            </li>
+          <ul class="">
+            <div
+              class="text-[#ffffff] flex flex-row justify-end md:gap-[4vw] md:pt-5 mb-5"
+            >
+              <li>
+                <a
+                  href="https://www.instagram.com/vlchardscape/"
+                  target="_blank"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://pin.it/4S5DDLk" target="_blank"
+                  ><i class="fa-brands fa-pinterest"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-twitter"></i> </a>
+              </li>
+            </div>
+            <div class="text-[#ffffff] flex md:flex-row md:gap-[4vw] md:mb-5">
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">About Us</a>
+              </li>
+              <li>
+                <a href="#">Gallery</a>
+              </li>
+              <li>
+                <a href="#">Contact Us </a>
+              </li>
+            </div>
           </ul>
         </div>
       </nav>
@@ -40,19 +70,40 @@
         <div class="flex flex-col">
           <h1 class="text-8xl text-center text-[#000000]">Outdoor Living</h1>
           <h1 class="text-7xl text-center text-[#000000]">Brought to Life</h1>
+          <div
+            class="border-2 border-black w-[28.1rem] ml-[4.25rem] -mt-3"
+          ></div>
         </div>
         <div class="">
-          <img
-            src="/img/IMG_3332.jpg"
-            alt=""
-            class="object-cover w-[30rem] h-96 pr-10"
-            id="image"
-          />
+          <div class="swiper w-[40rem] h-96">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img src="/img/IMG_6.jpg" class="object-cover" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/img/IMG_7.jpg" class="object-cover" />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="/img/IMG_5.jpg"
+                  class="object-fill object-center w-[40rem] h-96"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="/img/IMG_8.jpg"
+                  class="object-fill object-center w-[40rem] h-96"
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
     <section
-      class="flex flex-col md:flex-row w-full custom-container h-screen py-3"
+      class="flex flex-col md:flex-row w-full custom-container h-screen py-10"
     >
       <div
         class="flex flex-col justify-center items-center w-1/2 h-6/12 bg-[#000000]"
@@ -84,18 +135,12 @@
             <img src="img/IMG_3665.JPG" alt="" class="h-full w-full" />
           </div>
           <div class="row-start-2 col-start-2">
-            <img src="img/IMG_0891.jpg" alt="" class="h-[18.1rem] w-full" />
+            <img src="img/IMG_0891.jpg" alt="" class="h-[16.2rem] w-full" />
           </div>
         </div>
       </div>
     </section>
-    <!-- <section class="flex flex-col items-center h-screen">
-      <h1 class="text-center w-9/12 text-3xl font-semibold mt-10">
-        For over 30 years, we've worked with our clients to provide designs that
-        meet their needs across the globe. This world offers no shortage of
-        challenges, and our focus is on the needs of our clients.
-      </h1>
-    </section> -->
+
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -104,7 +149,7 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
-    <script>
+    <!-- <script>
       let images = [
         "/img/IMG_1.jpg",
         "/img/IMG_2.JPG",
@@ -126,6 +171,20 @@
       window.onload = function () {
         setInterval(change, 4000);
       };
+    </script> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        // Optional parameters
+
+        loop: true,
+        speed: 800,
+
+        autoplay: {
+          delay: 4000,
+          disableOnInteraction: false,
+        },
+      });
     </script>
   </body>
 </html>
