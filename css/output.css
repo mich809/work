@@ -559,6 +559,10 @@ video {
   margin-left: 6.25rem;
 }
 
+.mr-auto{
+  margin-right: auto;
+}
+
 .flex{
   display: flex;
 }
@@ -685,6 +689,11 @@ video {
 
 .justify-around{
   justify-content: space-around;
+}
+
+.gap-x-3{
+  -moz-column-gap: 0.75rem;
+       column-gap: 0.75rem;
 }
 
 .border-2{
@@ -828,6 +837,14 @@ video {
 
 .font-light{
   font-weight: 300;
+}
+
+.uppercase{
+  text-transform: uppercase;
+}
+
+.capitalize{
+  text-transform: capitalize;
 }
 
 .italic{
