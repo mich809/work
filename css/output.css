@@ -773,6 +773,15 @@ video {
   background-color: rgb(239 68 68 / var(--tw-bg-opacity));
 }
 
+.hover\:text-\[\#c0c0c0c\]:hover{
+  color: #c0c0c0c;
+}
+
+.hover\:text-\[\#c0c0c0\]:hover{
+  --tw-text-opacity: 1;
+  color: rgb(192 192 192 / var(--tw-text-opacity));
+}
+
 @media (min-width: 768px){
   .md\:mb-5{
     margin-bottom: 1.25rem;
