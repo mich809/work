@@ -11,7 +11,8 @@ module.exports = {
       
     },
     fontFamily:{
-      'gaya' : ['Gayathri', 'Arial']
+      'gaya' : ['Gayathri', 'Arial'],
+      'raj' : ['Rajdhani','Arial']
     }
   },
   },
