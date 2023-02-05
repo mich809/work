@@ -9,63 +9,49 @@
 
     <script defer src="main.js"></script>
   </head>
-  <body class="bg-dark-blue">
-    <header class="shadow-md shadow-light-blue">
-      <nav class="flex w-[92%] justify-around">
-        <div>
+  <body class="bg-[#ffffff] font-gaya">
+    <header class="shadow-md bg-[#000000]">
+      <nav class="flex w-[92%]">
+        <div class="ml-10">
           <img
-            class="w-32 cursor-pointer"
+            class="w-40 cursor-pointer"
             src="/img/logo-nobackground-1000.png"
             alt="..."
           />
         </div>
-        <div
-          class="nav-links duration-500 md:static absolute md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5"
-        >
+        <div class="flex items-center ml-auto">
           <ul
-            class="text-light-blue flex md:flex-row flex-col md:items-center md:gap-[4vw] md:pt-10 pt-0"
+            class="text-[#ffffff] flex md:flex-row md:items-center md:gap-[4vw] md:pt-10"
           >
             <li>
-              <a class="hover:text-gray-500 font-bold" href="#">Home</a>
+              <a class="font-bold" href="#">Home</a>
             </li>
             <li>
-              <a class="hover:text-gray-500 font-bold" href="#">About Us</a>
+              <a class="font-bold" href="#">About Us</a>
             </li>
             <li>
-              <a class="hover:text-gray-500 font-bold" href="#">Work</a>
+              <a class="font-bold" href="#">Work</a>
             </li>
             <li>
-              <a class="hover:text-gray-500 font-bold" href="#">Contact Us </a>
+              <a class="font-bold" href="#">Contact Us </a>
             </li>
           </ul>
-        </div>
-        <div class="flex items-center gap-6">
-          <ion-icon
-            onclick="onToggleMenu(this)"
-            name="menu"
-            class="text-3xl cursor-pointer md:hidden"
-          ></ion-icon>
         </div>
       </nav>
     </header>
     <section>
       <div class="flex py-10 justify-around items-center">
         <div class="flex flex-col">
-          <h1 class="font-bold text-8xl text-center text-medium-blue">
+          <h1 class="font-bold text-8xl text-center text-[#000000]">
             DIFFERENT AS USUAL
           </h1>
-          <div class="flex justify-around gap-x-8 text-2xl text-other-blue">
-            <p>Places</p>
-            <p>Space</p>
-            <p>Architecture</p>
-            <p>Interiors</p>
-          </div>
         </div>
         <div class="">
           <img
             src="/img/IMG_3332.jpg"
             alt=""
-            class="object-cover w-full h-96 pr-10"
+            class="object-cover w-[30rem] h-96 pr-10"
+            id="image"
           />
         </div>
       </div>
@@ -74,18 +60,18 @@
       class="flex flex-col md:flex-row w-full custom-container h-screen py-3"
     >
       <div
-        class="flex flex-col justify-center items-center w-1/2 h-6/12 bg-[#e9c46a]"
+        class="flex flex-col justify-center items-center w-1/2 h-6/12 bg-[#000000]"
       >
         <div class="px-12 text-left flex flex-col justify-center">
           <h4 class="mt-6 mb-3 text-xl font-light tracking-tighter">
-            <span class="text-[#fff] font-semibold">About Us</span>
+            <span class="text-[#ffffff] font-semibold">About Us</span>
           </h4>
           <h1
-            class="text-[#fff] tracking-[-.01em] font-nunito mb-5 font-semibold text-[40px]"
+            class="text-[#ffffff] tracking-[-.01em] mb-5 font-semibold text-[40px]"
           >
             VLC HARDSCAPE
           </h1>
-          <p class="font-nunito text-lg leading-6 font-thin text-[#fff]">
+          <p class="text-lg leading-6 font-thin text-[#ffffff]">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates
             obcaecati tempore nihil possimus totam vel quo sunt. Reprehenderit
             labore doloremque magnam quasi atque saepe laborum, aut error.
@@ -98,8 +84,12 @@
           <div class="row-start-1 col-start-1">
             <img src="img/IMG_3665.JPG" alt="" class="h-full w-full" />
           </div>
-          <div class="row-start-1 col-start-2 bg-other-blue"></div>
-          <div class="row-start-2 col-start-1 bg-[#e76f51]"></div>
+          <div class="row-start-1 col-start-2">
+            <img src="img/IMG_3665.JPG" alt="" class="h-full w-full" />
+          </div>
+          <div class="row-start-2 col-start-1">
+            <img src="img/IMG_3665.JPG" alt="" class="h-full w-full" />
+          </div>
           <div class="row-start-2 col-start-2">
             <img src="img/IMG_0891.jpg" alt="" class="h-[18.1rem] w-full" />
           </div>
@@ -122,11 +112,25 @@
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
     <script>
-      const navLinks = document.querySelector(".nav-links");
-      function onToggleMenu(e) {
-        e.name = e.name === "menu" ? "close" : "menu";
-        navLinks.classList.toggle("top-[9%]");
+      let images = [
+        "/img/IMG_1.jpg",
+        "/img/IMG_2.jpg",
+        "/img/IMG_3.JPG",
+        "/img/IMG_4.JPG",
+        "/img/IMG_5.JPG",
+      ];
+
+      let index = 0;
+      const imgElement = document.getElementById("image");
+
+      function change() {
+        imgElement.src = images[index];
+        index > 1 ? (index = 0) : index++;
       }
+
+      window.onload = function () {
+        setInterval(change, 1000);
+      };
     </script>
   </body>
 </html>

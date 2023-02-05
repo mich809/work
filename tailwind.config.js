@@ -10,6 +10,9 @@ module.exports = {
       'other-blue':'#f4a261'
       
     },
+    fontFamily:{
+      'gaya' : ['Gayathri', 'Arial']
+    }
   },
   },
   plugins: [],
