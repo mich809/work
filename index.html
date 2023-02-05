@@ -114,18 +114,20 @@
     <script>
       let images = [
         "/img/IMG_1.jpg",
-        "/img/IMG_2.jpg",
+        "/img/IMG_2.JPG",
         "/img/IMG_3.JPG",
-        "/img/IMG_4.JPG",
+        "/img/IMG_4.jpg",
         "/img/IMG_5.JPG",
       ];
 
-      let index = 0;
+      let count = 0;
       const imgElement = document.getElementById("image");
 
       function change() {
+        let index = count % images.length;
         imgElement.src = images[index];
-        index > 1 ? (index = 0) : index++;
+
+        count++;
       }
 
       window.onload = function () {
