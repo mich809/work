@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth antialiased">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -53,26 +53,26 @@
             </div>
             <div class="text-[#ffffff] flex md:flex-row md:gap-[4vw] md:mb-5">
               <li>
-                <a href="#" class="hover:text-[#c0c0c0]">Home</a>
+                <a href="#home" class="hover:text-[#c0c0c0]">Home</a>
               </li>
               <li>
-                <a href="#" class="hover:text-[#c0c0c0]">About Us</a>
+                <a href="#about" class="hover:text-[#c0c0c0]">About Us</a>
               </li>
               <li>
-                <a href="#" class="hover:text-[#c0c0c0]">Services</a>
+                <a href="#services" class="hover:text-[#c0c0c0]">Services</a>
               </li>
               <li>
-                <a href="#" class="hover:text-[#c0c0c0]">Gallery</a>
+                <a href="#gallery" class="hover:text-[#c0c0c0]">Gallery</a>
               </li>
               <li>
-                <a href="#" class="hover:text-[#c0c0c0]">Contact Us </a>
+                <a href="#contact" class="hover:text-[#c0c0c0]">Contact Us </a>
               </li>
             </div>
           </ul>
         </div>
       </nav>
     </header>
-    <section>
+    <section id="home">
       <div class="flex py-10 justify-around items-center">
         <div class="flex flex-col">
           <h1 class="text-8xl text-center text-[#000000]">Outdoor Living</h1>
@@ -119,6 +119,7 @@
     </section>
     <section
       class="flex flex-col md:flex-row w-full custom-container h-screen py-10"
+      id="about"
     >
       <div
         class="flex flex-col justify-center items-center w-1/2 h-6/12 bg-[#000000]"
@@ -185,6 +186,82 @@
             <li>COLUMNS</li>
             <li>PLANTERS</li>
           </ul>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="flex w-full min-h-screen justify-center items-center"
+      id="contact"
+    >
+      <div
+        class="bg-black flex flex-col justify-between md:flex-row md:space-x-6 space-y-6 md:space-y-0 w-full max-w-4xl p-8 rounded-xl shadow-lg text-white"
+      >
+        <div class="flex flex-col justify-center w-1/2">
+          <div>
+            <h1 class="text-4xl">Contact Us</h1>
+            <p class="">VLC HARDSCAPE LLC</p>
+          </div>
+          <div class="flex flex-col space-y-6 pt-10">
+            <div class="inline-flex space-x-4 items-center">
+              <i class="fa-solid fa-phone text-xl"></i>
+              <span class="font-raj">(561)-596-5149</span>
+            </div>
+            <div class="inline-flex space-x-5 items-center">
+              <i class="fa-solid fa-location-dot text-xl"></i>
+              <span class="font-raj">Coconut Creek FL, 33073</span>
+            </div>
+            <div class="inline-flex space-x-4 items-center">
+              <i class="fa-solid fa-envelope text-xl"></i>
+              <span class="font-raj">info@VLCHARDSCAPE.COM</span>
+            </div>
+          </div>
+          <div class="flex space-x-6 text-xl pt-10">
+            <a href="https://www.instagram.com/vlchardscape/" target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="https://pin.it/4S5DDLk" target="_blank"
+              ><i class="fa-brands fa-pinterest"></i
+            ></a>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i> </a>
+          </div>
+        </div>
+        <div class="bg-white rounded-xl p-8 w-1/2 text-gray-600 border-2">
+          <form action="" class="flex flex-col space-y-4">
+            <h1 class="text-2xl">General Inquiries</h1>
+            <div class="flex w-full gap-x-2">
+              <input
+                type="text"
+                placeholder="First Name"
+                class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-black"
+              />
+              <input
+                type="text"
+                placeholder="Last Name"
+                class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-black"
+              />
+            </div>
+            <div>
+              <input
+                type="email"
+                placeholder="Email"
+                class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-black"
+              />
+            </div>
+            <div>
+              <textarea
+                rows="4"
+                placeholder="How can we help you?"
+                class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-black"
+              ></textarea>
+            </div>
+            <button
+              class="inline-block w-full bg-black text-white rounded-lg px-6 py-2 uppercase text-sm"
+            >
+              Submit
+            </button>
+          </form>
         </div>
       </div>
     </section>
