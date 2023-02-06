@@ -150,6 +150,7 @@
         />
       </div>
     </section>
+
     <section
       class="flex flex-col md:flex-row w-full custom-container h-screen py-10"
       id="services"
@@ -186,6 +187,28 @@
             <li>COLUMNS</li>
             <li>PLANTERS</li>
           </ul>
+        </div>
+      </div>
+    </section>
+    <section
+      class="flex flex-col md:flex-col w-full custom-container h-screen py-10 bg-black"
+      id="gallery"
+    >
+      <div class="text-white text-center text-3xl"><h1>Gallery</h1></div>
+      <div class="">
+        <div class="swiper w-[40rem] h-96">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img src="/img/wine.jpg" class="object-cover" />
+            </div>
+            <div class="swiper-slide">
+              <img src="/img/IMG_8.JPG" class="object-cover w-[40rem] h-96" />
+            </div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
       </div>
     </section>
@@ -295,6 +318,17 @@
     ></script>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      const Manualswiper = new Swiper(".swiper", {
+        // Optional parameters// Optional parameters
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
     <script>
       const swiper = new Swiper(".swiper", {
         // Optional parameters
