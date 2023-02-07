@@ -19,7 +19,7 @@
   </head>
   <body class="bg-[#ffffff] font-gaya font-thin">
     <header class="bg-[#000000] border-b-4 border-gray-600 shadow-2xl">
-      <nav class="flex w-[92%]">
+      <nav class="w-[92%] hidden md:flex">
         <div class="ml-10">
           <img class="w-48 cursor-pointer" src="/img/logo4.png" alt="..." />
         </div>
@@ -74,11 +74,65 @@
           </ul>
         </div>
       </nav>
+      <nav class="w-full bg-black md:hidden fixed top-0 z-10">
+        <div class="relative">
+          <img class="w-48" src="/img/logo4.png" alt="..." />
+          <div class="flex md:hidden">
+            <button
+              class="outline-none menu-button ml-auto px-4 absolute top-[1.7rem] left-80"
+            >
+              <svg
+                class="w-12 h-12 text-white"
+                x-show="! showMenu"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 00 24 24"
+                stroke="currentColor"
+              >
+                <path d="m4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
+          </div>
+          <div class="hidden mobile-menu">
+            <ul class="flex flex-col items-center bg-black w-full absolute">
+              <li>
+                <a
+                  href="#home"
+                  class="block text-sm px-2 py-4 text-white bg-black"
+                  >Home
+                </a>
+              </li>
+              <li>
+                <a href="#about" class="block text-sm px-2 py-4 text-white"
+                  >About Us
+                </a>
+              </li>
+              <li>
+                <a href="#services" class="block text-sm px-2 py-4 text-white"
+                  >Services
+                </a>
+              </li>
+              <li>
+                <a href="#gallery" class="block text-sm px-2 py-4 text-white"
+                  >Gallery
+                </a>
+              </li>
+              <li>
+                <a href="#contact" class="block text-sm px-2 py-4 text-white"
+                  >Contact Us
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
 
-    <section id="home ">
+    <section id="home">
       <div
-        class="flex flex-col md:flex-row py-10 md:justify-around md:items-center"
+        class="flex flex-col md:flex-row py-32 md:py-10 md:justify-around md:items-center"
       >
         <div class="flex flex-col">
           <h1 class="text-8xl text-center text-[#000000]">Outdoor Living</h1>
@@ -368,6 +422,20 @@
           delay: 4000,
           disableOnInteraction: false,
         },
+      });
+    </script>
+
+    <script>
+      const btn = document.querySelector("button.menu-button");
+      const menu = document.querySelector(".mobile-menu");
+      const listOfLinks = [...document.links];
+      btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+      listOfLinks.forEach((element) => {
+        element.addEventListener("click", () => {
+          menu.classList.toggle("hidden");
+        });
       });
     </script>
   </body>
