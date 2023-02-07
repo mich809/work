@@ -18,7 +18,7 @@
     <script defer src="main.js"></script>
   </head>
   <body class="bg-[#ffffff] font-gaya font-thin">
-    <header class="bg-[#000000] border-b-4 border-gray-600 shadow-2xl">
+    <!-- <header class="bg-[#000000] border-b-4 border-gray-600 shadow-2xl">
       <nav class="flex w-[92%]">
         <div class="ml-10">
           <img class="w-48 cursor-pointer" src="/img/logo4.png" alt="..." />
@@ -74,20 +74,18 @@
           </ul>
         </div>
       </nav>
-    </header>
-    <section id="home">
-      <div class="flex py-10 justify-around items-center">
+    </header> -->
+    <section id="home ">
+      <div
+        class="flex flex-col md:flex-row py-10 md:justify-around md:items-center"
+      >
         <div class="flex flex-col">
           <h1 class="text-8xl text-center text-[#000000]">Outdoor Living</h1>
-          <h1 class="text-5xl text-center text-[#000000] border-b-2">
-            BROUGHT TO LIFE
-          </h1>
+          <h1 class="text-5xl text-center text-[#000000]">BROUGHT TO LIFE</h1>
         </div>
         <div class="">
-          <div class="swiper w-[40rem] h-96">
-            <!-- Additional required wrapper -->
+          <div class="swiper w-[25rem] h-[15rem] md:w-[40rem] md:h-96">
             <div class="swiper-wrapper">
-              <!-- Slides -->
               <div class="swiper-slide">
                 <img src="/img/new-slider.jpg" class="object-cover" />
               </div>
@@ -118,11 +116,11 @@
       </div>
     </section>
     <section
-      class="flex flex-col md:flex-row w-full custom-container h-screen py-10"
+      class="flex flex-col md:flex-row w-full h-screen md:py-10"
       id="about"
     >
       <div
-        class="flex flex-col justify-center items-center w-1/2 h-6/12 bg-[#000000]"
+        class="flex flex-col items-center w-full h-1/2 md:h-96 md:justify-center md:w-1/2 bg-[#000000]"
       >
         <div class="px-12 text-left flex flex-col justify-center">
           <h4 class="mt-6 mb-3 text-xl font-light tracking-tighter">
@@ -142,20 +140,20 @@
           </p>
         </div>
       </div>
-      <div class="w-1/2">
+      <div class="md:h-96 md:w-1/2">
         <img
           src="./img/collage.JPG"
           alt="Collage of images"
-          class="h-full w-full"
+          class="md:h-full md:w-full"
         />
       </div>
     </section>
 
     <section
-      class="flex flex-col md:flex-row w-full custom-container h-screen py-10"
+      class="flex flex-col md:flex-row w-full h-screen py-10"
       id="services"
     >
-      <div class="w-1/2">
+      <div class="md:w-1/2 order-2 md:order-1">
         <img
           src="./img/services.jpg"
           alt="picture of blue house"
@@ -163,10 +161,10 @@
         />
       </div>
       <div
-        class="flex flex-col justify-center items-center w-1/2 h-6/12 bg-[#000000]"
+        class="flex flex-col justify-center items-center w-full md:w-1/2 md:h-6/12 bg-[#000000] md:order-2"
       >
         <div
-          class="px-12 text-center flex flex-col justify-center items-center"
+          class="py-10 md:py-0 px-12 text-center flex flex-col justify-center items-center"
         >
           <h1 class="text-[#ffffff] tracking-[-.01em] mb-5 text-[40px]">
             Services
@@ -190,16 +188,14 @@
         </div>
       </div>
     </section>
-    <section
-      class="flex flex-col md:flex-col w-full custom-container h-screen py-10 bg-black"
+    <!-- <section
+      class="flex flex-col w-full h-screen py-10 border-2 border-red-600 bg-black"
       id="gallery"
     >
       <div class="text-white text-center text-3xl"><h1>Gallery</h1></div>
       <div class="">
         <div class="swiper w-[50rem] h-[30rem]">
-          <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
-            <!-- Slides -->
             <div class="swiper-slide">
               <img src="/img/wine.jpg" class="object-cover w-full h-full" />
             </div>
@@ -229,8 +225,8 @@
           <div class="swiper-button-next"></div>
         </div>
       </div>
-    </section>
-
+    </section> -->
+    <!-- 
     <section
       class="flex w-full min-h-screen justify-center items-center"
       id="contact"
@@ -327,7 +323,7 @@
           </form>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <script
       type="module"
