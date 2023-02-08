@@ -28,8 +28,8 @@
             <div
               class="text-[#ffffff] flex flex-row justify-end md:gap-[4vw] md:pt-5 mb-5"
             >
-              <div class="flex gap-x-3 mr-auto">
-                <i class="fa-solid fa-phone ml-auto"></i>
+              <div class="flex mr-auto gap-x-3">
+                <i class="ml-auto fa-solid fa-phone"></i>
                 <p class="font-raj">(561)-596-5149</p>
               </div>
               <li>
@@ -74,7 +74,7 @@
           </ul>
         </div>
       </nav>
-      <nav class="w-full bg-black md:hidden fixed top-0 z-10">
+      <nav class="fixed top-0 z-10 w-full bg-black md:hidden">
         <div class="relative">
           <img class="w-48" src="/img/logo4.png" alt="..." />
           <div class="flex md:hidden">
@@ -96,31 +96,31 @@
             </button>
           </div>
           <div class="hidden mobile-menu">
-            <ul class="flex flex-col items-center bg-black w-full absolute">
+            <ul class="absolute flex flex-col items-center w-full bg-black">
               <li>
                 <a
                   href="#home"
-                  class="block text-sm px-2 py-4 text-white bg-black"
+                  class="block px-2 py-4 text-sm text-white bg-black"
                   >Home
                 </a>
               </li>
               <li>
-                <a href="#about" class="block text-sm px-2 py-4 text-white"
+                <a href="#about" class="block px-2 py-4 text-sm text-white"
                   >About Us
                 </a>
               </li>
               <li>
-                <a href="#services" class="block text-sm px-2 py-4 text-white"
+                <a href="#services" class="block px-2 py-4 text-sm text-white"
                   >Services
                 </a>
               </li>
               <li>
-                <a href="#gallery" class="block text-sm px-2 py-4 text-white"
+                <a href="#gallery" class="block px-2 py-4 text-sm text-white"
                   >Gallery
                 </a>
               </li>
               <li>
-                <a href="#contact" class="block text-sm px-2 py-4 text-white"
+                <a href="#contact" class="block px-2 py-4 text-sm text-white"
                   >Contact Us
                 </a>
               </li>
@@ -132,7 +132,7 @@
 
     <section id="home">
       <div
-        class="flex flex-col md:flex-row py-32 md:py-10 md:justify-around md:items-center"
+        class="flex flex-col py-32 md:flex-row md:py-10 md:justify-around md:items-center"
       >
         <div class="flex flex-col">
           <h1 class="text-8xl text-center text-[#000000]">Outdoor Living</h1>
@@ -142,21 +142,31 @@
           <div class="swiper w-[23rem] h-[15rem] md:w-[40rem] md:h-96">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <img src="/img/new-slider.jpg" class="object-cover" />
+                <img
+                  src="/img/new-slider.jpg"
+                  class="object-cover"
+                  alt="pavement"
+                />
               </div>
               <div class="swiper-slide">
-                <img src="/img/img-new.jpg" class="object-cover" />
+                <img
+                  src="/img/img-new.jpg"
+                  class="object-cover"
+                  alt="pavement with stones"
+                />
               </div>
               <div class="swiper-slide">
                 <img
                   src="/img/wine.jpg"
                   class="object-fill object-center w-[40rem] h-96"
+                  alt="wine bottle over firepit"
                 />
               </div>
               <div class="swiper-slide">
                 <img
                   src="/img/new-pool.jpg"
                   class="object-fill object-center w-[40rem] h-96"
+                  alt="pool"
                 />
               </div>
               <!-- <div class="swiper-slide">
@@ -171,14 +181,14 @@
       </div>
     </section>
     <section
-      class="flex flex-col md:flex-row w-full h-screen md:my-10"
+      class="flex flex-col w-full h-screen md:flex-row md:my-10"
       id="about"
     >
       <div
         class="flex flex-col items-center w-full h-screen md:h-screen md:justify-center md:w-1/2 bg-[#000000]"
       >
         <div
-          class="px-12 flex flex-col justify-center text-center md:text-left"
+          class="flex flex-col justify-center px-12 text-center md:text-left"
         >
           <h4 class="mt-6 mb-3 text-xl font-light tracking-tighter">
             <span class="text-[#ffffff]">About Us</span>
@@ -206,10 +216,10 @@
       </div>
     </section>
     <section
-      class="flex flex-col md:flex-row w-full h-screen mt-20 md:mt-0"
+      class="flex flex-col w-full h-screen mt-20 md:flex-row md:mt-0"
       id="services"
     >
-      <div class="md:w-1/2 order-2 md:order-1">
+      <div class="order-2 md:w-1/2 md:order-1">
         <img
           src="./img/services.jpg"
           alt="picture of blue house"
@@ -220,7 +230,7 @@
         class="flex flex-col justify-center items-center w-full md:w-1/2 md:h-6/12 bg-[#000000] md:order-2"
       >
         <div
-          class="py-10 md:py-0 px-12 text-center flex flex-col justify-center items-center"
+          class="flex flex-col items-center justify-center px-12 py-10 text-center md:py-0"
         >
           <h1 class="text-[#ffffff] tracking-[-.01em] mb-5 text-[40px]">
             Services
@@ -245,36 +255,53 @@
       </div>
     </section>
     <section
-      class="flex flex-col w-full md:h-screen my-20 md:py-10 bg-black"
+      class="flex flex-col w-full my-20 bg-black md:h-screen md:py-10"
       id="gallery"
     >
-      <div class="text-white text-center text-3xl py-10 md:py-0">
+      <div class="py-10 text-3xl text-center text-white md:py-0">
         <h1>Gallery</h1>
       </div>
       <div class="">
         <div class="swiper md:w-[50rem] md:h-[30rem]">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <img src="/img/wine.jpg" class="object-cover w-full h-full" />
+              <img
+                src="/img/wine.jpg"
+                class="object-cover w-full h-full"
+                alt="wine bottle over firepit"
+              />
             </div>
             <div class="swiper-slide">
               <img
                 src="/img/IMG_8.JPG"
-                class="object-cover h-96 w-full md:w-full md:h-full"
+                class="object-cover w-full h-96 md:w-full md:h-full"
+                alt="pavement"
               />
             </div>
             <div class="swiper-slide">
-              <img src="/img/dog.jpg" class="object-cover w-full h-full" />
+              <img
+                src="/img/dog.jpg"
+                class="object-cover w-full h-full"
+                alt="dog sitting infront of blue door"
+              />
             </div>
             <div class="swiper-slide">
               <img src="/img/grass.jpg" class="object-cover w-full h-full" />
             </div>
             <div class="swiper-slide">
-              <img src="/img/sunny.jpg" class="object-cover w-full h-full" />
+              <img
+                src="/img/sunny.jpg"
+                class="object-cover w-full h-full"
+                alt="pavement next to grass"
+              />
             </div>
 
             <div class="swiper-slide">
-              <img src="/img/pool.jpg" class="object-cover w-full h-full" />
+              <img
+                src="/img/pool.jpg"
+                class="object-cover w-full h-full"
+                alt="pool"
+              />
             </div>
           </div>
           <div class="swiper-button-prev"></div>
@@ -284,39 +311,39 @@
     </section>
 
     <section
-      class="flex flex-col md:flex-row w-full min-h-screen justify-center items-center"
+      class="flex flex-col items-center justify-center w-full min-h-screen md:flex-row"
       id="contact"
     >
       <div
-        class="bg-black flex flex-col items-center justify-between md:flex-row md:space-x-6 space-y-6 md:space-y-0 w-full max-w-4xl p-8 rounded-xl shadow-lg text-white"
+        class="flex flex-col items-center justify-between w-full max-w-4xl p-8 space-y-6 text-white bg-black shadow-lg md:flex-row md:space-x-6 md:space-y-0 rounded-xl"
       >
         <div
-          class="flex flex-col justify-center items-center md:items-start w-full md:w-1/2"
+          class="flex flex-col items-center justify-center w-full md:items-start md:w-1/2"
         >
           <div class="text-center md:text-left">
             <h1 class="text-4xl">Contact Us</h1>
             <p class="">VLC HARDSCAPE LLC</p>
             <p>Licensed & Insured</p>
           </div>
-          <div class="flex flex-col space-y-6 pt-10">
-            <div class="inline-flex space-x-4 items-center">
-              <i class="fa-solid fa-phone text-xl"></i>
+          <div class="flex flex-col pt-10 space-y-6">
+            <div class="inline-flex items-center space-x-4">
+              <i class="text-xl fa-solid fa-phone"></i>
               <span class="font-raj">(561)-596-5149</span>
             </div>
-            <div class="inline-flex space-x-5 items-center">
-              <i class="fa-solid fa-location-dot text-xl"></i>
+            <div class="inline-flex items-center space-x-5">
+              <i class="text-xl fa-solid fa-location-dot"></i>
               <span class="font-raj">Coconut Creek FL, 33073</span>
             </div>
-            <div class="inline-flex space-x-5 items-center">
-              <i class="fa-solid fa-location-dot text-xl"></i>
+            <div class="inline-flex items-center space-x-5">
+              <i class="text-xl fa-solid fa-location-dot"></i>
               <span class="font-raj">Bonita Springs FL, 34134</span>
             </div>
-            <div class="inline-flex space-x-4 items-center">
-              <i class="fa-solid fa-envelope text-xl"></i>
+            <div class="inline-flex items-center space-x-4">
+              <i class="text-xl fa-solid fa-envelope"></i>
               <span class="font-raj">info@VLCHARDSCAPE.COM</span>
             </div>
           </div>
-          <div class="flex space-x-6 text-xl pt-10">
+          <div class="flex pt-10 space-x-6 text-xl">
             <a href="https://www.instagram.com/vlchardscape/" target="_blank"
               ><i class="fa-brands fa-instagram"></i
             ></a>
@@ -331,7 +358,7 @@
           </div>
         </div>
         <div
-          class="bg-white rounded-xl p-8 w-full h-screen md:h-1/2 md:w-1/2 text-gray-600 border-2"
+          class="w-full h-screen p-8 text-gray-600 bg-white border-2 rounded-xl md:h-1/2 md:w-1/2"
         >
           <form
             action="https://formsubmit.co/info@VLCHARDSCAPE.COM"
@@ -346,14 +373,14 @@
                 name="first name"
                 type="text"
                 placeholder="First Name"
-                class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-black"
+                class="w-full px-4 py-2 rounded-md outline-none ring-1 ring-gray-300 focus:ring-2 focus:ring-black"
               />
               <input
                 name="last name"
                 required
                 type="text"
                 placeholder="Last Name"
-                class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-black"
+                class="w-full px-4 py-2 rounded-md outline-none ring-1 ring-gray-300 focus:ring-2 focus:ring-black"
               />
             </div>
             <div>
@@ -362,7 +389,7 @@
                 placeholder="Email"
                 name="email"
                 required
-                class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-black"
+                class="w-full px-4 py-2 rounded-md outline-none ring-1 ring-gray-300 focus:ring-2 focus:ring-black"
               />
             </div>
             <div>
@@ -371,12 +398,12 @@
                 required
                 rows="4"
                 placeholder="How can we help you?"
-                class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-black"
+                class="w-full px-4 py-2 rounded-md outline-none ring-1 ring-gray-300 focus:ring-2 focus:ring-black"
               ></textarea>
             </div>
             <button
               type="submit"
-              class="inline-block w-full bg-black text-white rounded-lg px-6 py-2 uppercase text-sm"
+              class="inline-block w-full px-6 py-2 text-sm text-white uppercase bg-black rounded-lg"
             >
               Submit
             </button>
